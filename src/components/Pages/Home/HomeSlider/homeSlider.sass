@@ -1,0 +1,198 @@
+.home-products
+  position: relative
+  background: #FAFAFA
+  overflow-x: hidden
+
+.text-decoration
+  display: block
+  position: absolute
+  top: 0
+  left: 0
+  font-size: 25vw
+  letter-spacing: 0.1em
+  color: #939597
+  opacity: 0.05
+  font-weight: 500
+  line-height: 1
+  transform: translateX(-18.5%)
+ 
+ 
+.home-slider
+  position: relative
+  &::before
+    content: ''
+    position: absolute
+    top: 0
+    left: 0
+    width: 1px
+    height: 100%
+    background: #F0F0F0
+  &::after
+    content: ''
+    position: absolute
+    top: 0
+    right: 0
+    width: 1px
+    height: 100%
+    background: #F0F0F0
+
+
+
+.slide
+  position: relative
+  cursor: grab
+  +media-breakpoint-down(md)
+    cursor: pointer
+  &:hover
+    .slide-wrapper
+      background: #0052D7
+      .slide-lists
+        .slide-list
+          transform: translateY(-100%)
+          +media-breakpoint-down(md)
+            transform: none
+    .slide-title
+      color: #fafafa
+      //font-size: 30px
+      opacity: 0
+      +media-breakpoint-down(lg)
+        font-size: 24px
+      +media-breakpoint-down(md)
+        opacity: 1
+      +media-breakpoint-down(xs)
+        font-size: 20px
+    .slide-img
+      transform: scale(1.1)
+      position: relative
+  .slide-wrapper
+    position: relative
+    height: 85vh
+    min-height: 600px
+    width: 100%
+    display: flex
+    align-items: flex-start
+    justify-content: flex-end
+    flex-direction: column
+    border-left: 1px solid #F0F0F0
+    padding: 0 20px 90px 20px 
+    margin-left: -1px
+    transition: all .2s ease-in-out
+    +media-breakpoint-down(lg)
+      min-height: 600px
+    +media-breakpoint-down(md)
+      min-height: 470px
+      height: 470px
+      padding: 0 20px 40px 20px
+    +media-breakpoint-down(xs)
+      height: 400px
+      min-height: 400px
+      padding: 0 20px 20px 20px
+  .slide-img
+    width: 100%
+    transition: all .2s ease-in-out
+  .slide-title
+    display: block
+    font-size: 28px
+    text-transform: uppercase
+    font-weight: 500
+    color: #7f7f7f
+    margin-left: 20px
+    transition: all .2s ease-in-out
+    +media-breakpoint-down(lg)
+      font-size: 22px
+    +media-breakpoint-down(sm)
+      font-size: 18px
+      margin-left: 0
+    +media-breakpoint-down(xs)
+      font-size: 16px
+
+.slide-lists
+  margin-top: 40px
+  //margin-left: 20px
+  height: 50px
+  width: 100%
+  overflow: hidden
+  .slide-list
+    height: 50px
+    width: 100%
+    transition: all .2s ease-in-out
+    &.slide-list__title
+      +media-breakpoint-down(sm)
+        text-align: center
+        height: 100%
+    .slide-link
+      width: 100%
+      height: 100%
+      display: flex
+      align-items: center
+      justify-content: center
+      font-size: 18px
+      font-weight: 500
+      text-transform: uppercase
+      color: #BFD4F5
+      border: 1px solid #BFD4F5
+      transition: all .2s ease-in-out
+      +media-breakpoint-down(md)
+        font-size: 16px
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        //background-color: red
+        border-color: transparent
+      +media-breakpoint-down(sm)
+        font-size: 14px
+      +media-breakpoint-down(xs)
+        font-size: 12px
+      &:hover
+        border-color: #ffffff
+        color: rgba(0, 60, 215, 0.9)
+        background: #fff
+        +media-breakpoint-down(md)
+          background: transparent
+          color: transparent
+          border-color: transparent
+      &__title
+        display: block
+        +media-breakpoint-down(md)
+          display: none
+      &__icon
+        width: 40px
+        height: 40px
+        display: flex
+        align-items: center
+        justify-content: center
+        border: 1px solid #BFD4F5
+
+.slick-arrow
+  position: absolute
+  top: 60px
+  //transform: translateY(-50%)
+  width: 40px
+  height: 40px
+  font-size: 0
+  display: block
+  z-index: 1
+  //background: #0052D7
+  border: 1px solid #BFD4F5
+  transition: all .2s ease-in-out
+  +media-breakpoint-down(sm)
+    border: 1px solid #0052D7
+    svg
+      path
+        fill: #0052D7
+  +media-breakpoint-down(xs)
+    top: 40px
+  svg
+    path
+      transition: all .2s ease-in-out
+  &:hover
+    border-color: #0052D7
+    svg
+      path
+        fill: #0052D7
+  &.slick-prev
+    left: 0
+  &.slick-next
+    right: 0

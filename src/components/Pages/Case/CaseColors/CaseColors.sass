@@ -1,0 +1,72 @@
+.colors-section
+  background: #ffffff
+  padding: 160px 0
+  +media-breakpoint-down(md)
+    padding: 60px 0
+
+.colors-header
+  text-align: center
+  padding-bottom: 60px
+  +media-breakpoint-down(md)
+    text-align: left
+    padding-bottom: 30px
+  .h2
+    font-size: 45px
+    line-height: 130%
+    font-weight: 500
+    text-transform: uppercase
+    color: #7f7f7f
+    +media-breakpoint-down(md)
+      font-size: 35px
+    +media-breakpoint-down(xs)
+      font-size: 22px
+  
+.colors-items
+  display: flex
+  justify-content: space-between
+  flex-wrap: wrap
+  margin: 0 -10px
+
+.colors-item
+  width: 16.66%
+  padding: 10px
+  position: relative
+  +media-breakpoint-down(lg)
+    width: 25%
+  +media-breakpoint-down(md)
+    width: 33.33%
+  +media-breakpoint-down(xs)
+    width: 50%
+  &:hover
+    .image-wrapper
+      &::after
+        background: #0052D7
+  .image-wrapper
+    position: relative
+    width: 100%
+    height: 100%
+    &::after
+      content: ''
+      position: absolute
+      top: 0
+      left: 0
+      width: 100%
+      height: 100%
+      background: transparent
+      transition: all .3s ease-in-out
+  .color-info
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    padding: 20px
+    .color-id, .color-name
+      font-size: 12px
+      text-transform: uppercase
+      color: #ffffff
+      +media-breakpoint-down(lg)
+        font-size: .8em

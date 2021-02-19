@@ -1,0 +1,92 @@
+.menu
+  display: flex
+  padding: 0
+  margin-right: 15px
+  +media-breakpoint-down(lg)
+    flex-direction: column
+    margin-right: 0
+    width: 400px
+  +media-breakpoint-down(md)
+    width: 100%
+  &.is-open
+    .menu-item
+      &__link
+        color: #939597
+        &:hover
+          color: #0052D7
+    .menu-item__drop
+      .menu-item__button
+        color: #939597
+        &:hover
+          color: #0052D7
+          svg
+            path
+              fill: #0052D7
+        svg
+          transform: rotate(180deg)
+          path 
+            fill: #939597
+  &-item
+    padding: 0
+    margin: 0
+    margin-right: 20px
+    +media-breakpoint-down(lg)
+      text-align: center
+      margin: 0
+      padding: 10px 0
+      border-bottom: 1px solid #ededed
+    &__link
+      color: #BFD4F5
+      font-size: 12px
+      font-weight: 500
+      text-transform: uppercase
+      letter-spacing: 0.03em
+      line-height: 40px
+      transition: all .3s ease-in-out
+      +media-breakpoint-down(lg)
+        font-size: 18px
+        color: #939597
+      &:hover
+        color: #ffffff
+        +media-breakpoint-down(lg)
+          color: #0052D7
+  &-item__drop
+    padding: 0
+    margin: 0
+    margin-right: 20px
+    +media-breakpoint-down(lg)
+      text-align: center
+      margin-right: 0
+      padding-top: 10px
+      //border-top: 1px solid #ededed
+      border-bottom: 1px solid #ededed
+    .menu-item__button
+      color: #BFD4F5
+      font-size: 12px
+      font-weight: 500
+      text-transform: uppercase
+      letter-spacing: 0.03em
+      line-height: 40px
+      margin-top: -1px
+      transition: all .3s ease-in-out
+      +media-breakpoint-down(lg)
+        font-size: 18px
+        color: #939597
+        margin-bottom: 10px
+      svg
+        margin-left: 5px
+        transition: all .3s ease-in-out
+        path
+          transition: all .3s ease-in-out
+          +media-breakpoint-down(lg)
+            fill: #939597
+      &:hover
+        color: #ffffff
+        +media-breakpoint-down(lg)
+          color: #0052D7
+        svg
+          path
+           fill: #fff
+           +media-breakpoint-down(lg)
+            fill: #0052D7
+    

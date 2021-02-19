@@ -1,0 +1,141 @@
+.cooperation
+  padding: 160px 0
+  +media-breakpoint-down(md)
+    padding: 60px 0
+  .section-header
+    text-align: center
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    margin-bottom: 60px
+    .h2
+      font-size: 45px
+      line-height: 130%
+      font-weight: 500
+      text-transform: uppercase
+      color: #7F7F7F
+      margin-bottom: 24px
+      +media-breakpoint-down(sm)
+        font-size: 22px
+    &__text
+      font-size: 20px
+      line-height: 150%
+      letter-spacing: 0.03em
+      color: #9e9e9e
+      width: 50%
+      text-align: center
+      +media-breakpoint-down(md)
+        width: 100%
+      +media-breakpoint-down(sm)
+        font-size: 16px
+      +media-breakpoint-down(xs)
+        font-size: 14px
+
+
+.form
+  display: flex
+  justify-content: center
+  align-items: flex-start
+  flex-wrap: wrap
+  padding: 0 5%
+  height: auto
+  +media-breakpoint-down(md)
+    padding: 0
+  .label
+    display: flex
+    flex-direction: column
+    width: 33.33%
+    padding: 0 15px
+    +media-breakpoint-down(md)
+      width: 50%
+    +media-breakpoint-down(xs)
+      width: 100%
+      padding: 0
+    .label-title
+      display: block
+      font-size: 14px
+      font-weight: 500
+      letter-spacing: 0.03em
+      text-transform: uppercase
+      color: #7f7f7f
+      margin-bottom: 15px
+    &-message
+      width: 100%
+    &-text
+      width: 100%
+      flex-direction: row
+      justify-content: flex-start
+      align-items: flex-start
+  .submit-button
+    background: #0052D7
+    border: 1px solid #0052D7
+    color: #ffffff
+    padding: 16px 60px
+    font-size: 18px
+    text-transform: uppercase
+    letter-spacing: 0.03em
+    font-weight: 500
+    margin-top: 45px
+    transition: all .2s ease-in-out
+    +media-breakpoint-down(xs)
+      width: 100%
+    &:hover
+      color: #0052d7
+      background: transparent
+
+.label
+  margin-bottom: 30px
+  position: relative
+  input, textarea, select
+    border: 1px solid #E0E0E1
+    background: transparent
+    width: 100%
+    height: 60px
+    display: block
+    padding: 16px
+    font-size: 16px
+    color: #0052d7
+  textarea
+    height: 120px
+  select
+    cursor: pointer
+    position: relative
+    padding: 16px 32px 16px 16px
+  .checkbox
+    width: 15px
+    height: 15px
+    margin-right: 20px
+    margin-top: 6px
+    border: 1px solid #E0E0E1
+    background: transparent
+    border-radius: 0
+  .form-text
+    width: 60%
+    font-size: 14px
+    letter-spacing: 0.03em
+    line-height: 17px
+    color: #939597
+    +media-breakpoint-down(lg)
+      width: 80%
+    +media-breakpoint-down(md)
+      width: 100%
+    
+.select-wrapper
+  position: relative
+  display: block
+  .select-arrow
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 40px
+    height: 60px
+    position: absolute
+    top: 0
+    right: 0
+    pointer-events: none
+    svg
+      width: 12px
+      height: 10px
+      path
+        fill: #0052d7

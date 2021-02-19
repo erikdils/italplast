@@ -1,0 +1,106 @@
+.drop-menu
+  position: fixed
+  top: 130px
+  left: 0
+  width: 100%
+  height: auto
+  padding: 36px 12vw
+  background: #fafafa
+  border-top: 1px solid #E7E7E7
+  display: flex
+  flex-direction: row
+  align-items: stretch
+  justify-content: center
+  transition: all .3s ease-in-out
+  opacity: 0
+  pointer-events: none
+  visibility: hidden
+  +media-breakpoint-down(lg)
+    height: 0
+    position: relative
+    width: auto
+    top: auto
+    left: auto
+    flex-direction: column
+    align-items: center
+    padding: 0
+    overflow: hidden
+    transition: all .5s ease-in-out
+    border-color: transparent
+    //margin-top: 20px
+  &.is-open
+    opacity: 1
+    pointer-events: auto
+    visibility: visible
+    +media-breakpoint-down(lg)
+      height: auto
+  &.is-scroll
+    top: 90px
+    +media-breakpoint-down(lg)
+      top: auto
+  &__list
+    border-left: 1px solid #E7E7E7
+    position: relative
+    padding: 0 34px
+    +media-breakpoint-down(lg)
+      padding: 0
+      border-color: transparent
+      border-top: 1px solid #E7E7E7
+      width: 100%
+    &:first-child
+      +media-breakpoint-down(lg)
+        border-top: 1px solid #E7E7E7
+        display: block
+    .list-item
+      position: relative
+      display: flex
+      width: 100%
+      margin: 4px 0
+      +media-breakpoint-down(lg)
+        display: none
+        text-align: center
+        padding: 15px 0
+        margin: 0
+      &:first-child
+        +media-breakpoint-down(lg)
+          display: flex
+        &::before
+          display: none
+        .list-item__link
+          margin-left: 0
+          margin-bottom: 20px
+          text-transform: uppercase
+          font-weight: 500
+          font-size: 13px
+          color: #0052D7
+          +media-breakpoint-down(lg)
+            margin-bottom: 0
+            text-align: center
+            display: block
+            width: 100%
+            font-size: 16px
+          &:hover
+            color: #7f7f7f
+      &:hover
+        &::before
+          background: #0052D7
+      &::before
+        content: ''
+        position: absolute
+        left: 0
+        top: 50%
+        transform: translateY(-50%)
+        width: 6px
+        height: 6px
+        background: #7f7f7f
+        transition: all .3s ease-in-out
+      &__link
+        font-size: 14px
+        color: #7f7f7f
+        margin-left: 19px
+        transition: all .3s ease-in-out
+        &:hover
+          color: #0052D7
+      &.list-item__category
+        +media-breakpoint-down(lg)
+          display: none

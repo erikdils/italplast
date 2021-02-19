@@ -1,0 +1,113 @@
+.contacts
+  position: relative
+  display: flex
+  align-items: stretch
+  flex-direction: row
+  justify-content: space-between
+  height: 100%
+  overflow: hidden
+  +media-breakpoint-down(md)
+    flex-direction: column-reverse
+
+.maps
+  position: relative
+  width: 50%
+  background: #939597
+  +media-breakpoint-down(md)
+    width: 100%
+
+.map
+  width: 100%
+  height: 100%
+  min-height: 100%
+  align-items: center
+  justify-content: center
+  display: none
+  &.is-active
+    display: flex
+
+iframe
+  display: block
+  position: relative
+  border: none
+  width: 100%
+  height: 100%
+  +media-breakpoint-down(md)
+    height: 500px
+
+.address-wrapper
+  width: 50%
+  padding: 120px 8vw
+  +media-breakpoint-down(lg)
+    padding: 90px 6vw
+  +media-breakpoint-down(md)
+    width: 100%
+    padding: 60px 6vw
+    
+  
+.address-item
+  margin: 30px 0
+
+.address-title
+  color: #0052D7
+  font-size: 14px
+  letter-spacing: 0.03em
+  font-weight: 500
+  text-transform: uppercase
+  padding: 0
+  text-align: left
+  display: flex
+  justify-content: flex-start
+  margin-bottom: 10px
+  transition: all .2s ease-in-out
+  &.is-active
+    .address-title__icon
+      &::before
+        border: 1px solid #0052D7
+  .address-title__icon
+    width: 18px
+    height: 18px
+    position: relative
+    display: block
+    margin-right: 10px
+    pointer-events: none
+    &::before
+      content: ''
+      position: absolute
+      top: 0
+      left: 0
+      width: 18px
+      height: 18px
+      border: 1px solid transparent 
+      transition: all .2s ease-in-out
+    &::after
+      content: ''
+      position: absolute
+      top: 50%
+      left: 50%
+      transform: translate(-50%, -50%)
+      width: 6px
+      height: 6px
+      background-color: #0052D7
+      transition: all .2s ease-in-out
+
+.contacts-list
+  padding-left: 28px
+  &__item
+    padding: 2px 0
+    .list-title
+      color: #939597
+      font-size: 14px
+      font-weight: 400
+    .list-text
+      color: #939597
+      font-size: 14px
+      line-height: 24px
+      font-weight: 400
+    .list-link
+      font-size: 14px
+      font-weight: 500
+      color: #0052D7
+      transition: all .2s ease-in-out
+      &:hover
+        color: #939597

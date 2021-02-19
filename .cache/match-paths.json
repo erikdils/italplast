@@ -1,0 +1,314 @@
+[
+    {
+        "path": "/bg/catalog/doors/",
+        "matchPath": "/bg/catalog/doors/"
+    },
+    {
+        "path": "/bg/catalog/dumpster/",
+        "matchPath": "/bg/catalog/dumpster/"
+    },
+    {
+        "path": "/bg/catalog/mosquito-nets/",
+        "matchPath": "/bg/catalog/mosquito-nets/"
+    },
+    {
+        "path": "/bg/catalog/rehau-blitz/",
+        "matchPath": "/bg/catalog/rehau-blitz/"
+    },
+    {
+        "path": "/bg/catalog/rehau-briliant/",
+        "matchPath": "/bg/catalog/rehau-briliant/"
+    },
+    {
+        "path": "/bg/catalog/rehau-design-60/",
+        "matchPath": "/bg/catalog/rehau-design-60/"
+    },
+    {
+        "path": "/bg/catalog/rehau-design-70/",
+        "matchPath": "/bg/catalog/rehau-design-70/"
+    },
+    {
+        "path": "/bg/catalog/rehau-geneo/",
+        "matchPath": "/bg/catalog/rehau-geneo/"
+    },
+    {
+        "path": "/bg/catalog/rehau-synego/",
+        "matchPath": "/bg/catalog/rehau-synego/"
+    },
+    {
+        "path": "/bg/catalog/shutters-1/",
+        "matchPath": "/bg/catalog/shutters-1/"
+    },
+    {
+        "path": "/bg/catalog/shutters/",
+        "matchPath": "/bg/catalog/shutters/"
+    },
+    {
+        "path": "/bg/catalog/sliding/",
+        "matchPath": "/bg/catalog/sliding/"
+    },
+    {
+        "path": "/bg/catalog/windows/",
+        "matchPath": "/bg/catalog/windows/"
+    },
+    {
+        "path": "/bg/materials/aluminum/",
+        "matchPath": "/bg/materials/aluminum/"
+    },
+    {
+        "path": "/bg/materials/pvc/",
+        "matchPath": "/bg/materials/pvc/"
+    },
+    {
+        "path": "/bg/materials/wood/",
+        "matchPath": "/bg/materials/wood/"
+    },
+    {
+        "path": "/de/catalog/doors/",
+        "matchPath": "/de/catalog/doors/"
+    },
+    {
+        "path": "/de/catalog/dumpster/",
+        "matchPath": "/de/catalog/dumpster/"
+    },
+    {
+        "path": "/de/catalog/mosquito-nets/",
+        "matchPath": "/de/catalog/mosquito-nets/"
+    },
+    {
+        "path": "/de/catalog/rehau-blitz/",
+        "matchPath": "/de/catalog/rehau-blitz/"
+    },
+    {
+        "path": "/de/catalog/rehau-briliant/",
+        "matchPath": "/de/catalog/rehau-briliant/"
+    },
+    {
+        "path": "/de/catalog/rehau-design-60/",
+        "matchPath": "/de/catalog/rehau-design-60/"
+    },
+    {
+        "path": "/de/catalog/rehau-design-70/",
+        "matchPath": "/de/catalog/rehau-design-70/"
+    },
+    {
+        "path": "/de/catalog/rehau-geneo/",
+        "matchPath": "/de/catalog/rehau-geneo/"
+    },
+    {
+        "path": "/de/catalog/rehau-synego/",
+        "matchPath": "/de/catalog/rehau-synego/"
+    },
+    {
+        "path": "/de/catalog/shutters-1/",
+        "matchPath": "/de/catalog/shutters-1/"
+    },
+    {
+        "path": "/de/catalog/shutters/",
+        "matchPath": "/de/catalog/shutters/"
+    },
+    {
+        "path": "/de/catalog/sliding/",
+        "matchPath": "/de/catalog/sliding/"
+    },
+    {
+        "path": "/de/catalog/windows/",
+        "matchPath": "/de/catalog/windows/"
+    },
+    {
+        "path": "/de/materials/aluminum/",
+        "matchPath": "/de/materials/aluminum/"
+    },
+    {
+        "path": "/de/materials/pvc/",
+        "matchPath": "/de/materials/pvc/"
+    },
+    {
+        "path": "/de/materials/wood/",
+        "matchPath": "/de/materials/wood/"
+    },
+    {
+        "path": "/it/catalog/doors/",
+        "matchPath": "/it/catalog/doors/"
+    },
+    {
+        "path": "/it/catalog/dumpster/",
+        "matchPath": "/it/catalog/dumpster/"
+    },
+    {
+        "path": "/it/catalog/mosquito-nets/",
+        "matchPath": "/it/catalog/mosquito-nets/"
+    },
+    {
+        "path": "/it/catalog/rehau-blitz/",
+        "matchPath": "/it/catalog/rehau-blitz/"
+    },
+    {
+        "path": "/it/catalog/rehau-briliant/",
+        "matchPath": "/it/catalog/rehau-briliant/"
+    },
+    {
+        "path": "/it/catalog/rehau-design-60/",
+        "matchPath": "/it/catalog/rehau-design-60/"
+    },
+    {
+        "path": "/it/catalog/rehau-design-70/",
+        "matchPath": "/it/catalog/rehau-design-70/"
+    },
+    {
+        "path": "/it/catalog/rehau-geneo/",
+        "matchPath": "/it/catalog/rehau-geneo/"
+    },
+    {
+        "path": "/it/catalog/rehau-synego/",
+        "matchPath": "/it/catalog/rehau-synego/"
+    },
+    {
+        "path": "/it/catalog/shutters-1/",
+        "matchPath": "/it/catalog/shutters-1/"
+    },
+    {
+        "path": "/it/catalog/shutters/",
+        "matchPath": "/it/catalog/shutters/"
+    },
+    {
+        "path": "/it/catalog/sliding/",
+        "matchPath": "/it/catalog/sliding/"
+    },
+    {
+        "path": "/it/catalog/windows/",
+        "matchPath": "/it/catalog/windows/"
+    },
+    {
+        "path": "/it/materials/aluminum/",
+        "matchPath": "/it/materials/aluminum/"
+    },
+    {
+        "path": "/it/materials/pvc/",
+        "matchPath": "/it/materials/pvc/"
+    },
+    {
+        "path": "/it/materials/wood/",
+        "matchPath": "/it/materials/wood/"
+    },
+    {
+        "path": "/bg/404.html",
+        "matchPath": "/bg/404.html"
+    },
+    {
+        "path": "/bg/cases/",
+        "matchPath": "/bg/cases/"
+    },
+    {
+        "path": "/bg/catalogsd/",
+        "matchPath": "/bg/catalogsd/"
+    },
+    {
+        "path": "/bg/company/",
+        "matchPath": "/bg/company/"
+    },
+    {
+        "path": "/bg/contacts/",
+        "matchPath": "/bg/contacts/"
+    },
+    {
+        "path": "/bg/get-price/",
+        "matchPath": "/bg/get-price/"
+    },
+    {
+        "path": "/bg/search/",
+        "matchPath": "/bg/search/"
+    },
+    {
+        "path": "/bg/work-with-us/",
+        "matchPath": "/bg/work-with-us/"
+    },
+    {
+        "path": "/de/404.html",
+        "matchPath": "/de/404.html"
+    },
+    {
+        "path": "/de/cases/",
+        "matchPath": "/de/cases/"
+    },
+    {
+        "path": "/de/catalogsd/",
+        "matchPath": "/de/catalogsd/"
+    },
+    {
+        "path": "/de/company/",
+        "matchPath": "/de/company/"
+    },
+    {
+        "path": "/de/contacts/",
+        "matchPath": "/de/contacts/"
+    },
+    {
+        "path": "/de/get-price/",
+        "matchPath": "/de/get-price/"
+    },
+    {
+        "path": "/de/search/",
+        "matchPath": "/de/search/"
+    },
+    {
+        "path": "/de/work-with-us/",
+        "matchPath": "/de/work-with-us/"
+    },
+    {
+        "path": "/it/404.html",
+        "matchPath": "/it/404.html"
+    },
+    {
+        "path": "/it/cases/",
+        "matchPath": "/it/cases/"
+    },
+    {
+        "path": "/it/catalogsd/",
+        "matchPath": "/it/catalogsd/"
+    },
+    {
+        "path": "/it/company/",
+        "matchPath": "/it/company/"
+    },
+    {
+        "path": "/it/contacts/",
+        "matchPath": "/it/contacts/"
+    },
+    {
+        "path": "/it/get-price/",
+        "matchPath": "/it/get-price/"
+    },
+    {
+        "path": "/it/search/",
+        "matchPath": "/it/search/"
+    },
+    {
+        "path": "/it/work-with-us/",
+        "matchPath": "/it/work-with-us/"
+    },
+    {
+        "path": "/bg/",
+        "matchPath": "/bg/"
+    },
+    {
+        "path": "/de/",
+        "matchPath": "/de/"
+    },
+    {
+        "path": "/it/",
+        "matchPath": "/it/"
+    },
+    {
+        "path": "/bg/404/",
+        "matchPath": "/bg/*"
+    },
+    {
+        "path": "/de/404/",
+        "matchPath": "/de/*"
+    },
+    {
+        "path": "/it/404/",
+        "matchPath": "/it/*"
+    }
+]

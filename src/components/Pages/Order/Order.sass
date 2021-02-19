@@ -1,0 +1,217 @@
+.order
+  padding: 160px 0
+  +media-breakpoint-down(md)
+    padding: 60px 0
+  .section-header
+    text-align: center
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    margin-bottom: 60px
+    .h2
+      font-size: 45px
+      line-height: 130%
+      font-weight: 500
+      text-transform: uppercase
+      color: #7F7F7F
+      margin-bottom: 24px
+      +media-breakpoint-down(sm)
+        font-size: 22px
+    &__text
+      font-size: 20px
+      line-height: 150%
+      letter-spacing: 0.03em
+      color: #9e9e9e
+      width: 50%
+      text-align: center
+      +media-breakpoint-down(md)
+        width: 100%
+      +media-breakpoint-down(sm)
+        font-size: 16px
+      +media-breakpoint-down(xs)
+        font-size: 14px
+
+.order-form
+  display: flex
+  flex-direction: row 
+  align-items: flex-start
+  justify-content: center
+  flex-wrap: wrap
+  width: 60%
+  margin: 0 auto
+  +media-breakpoint-down(lg)
+    width: 80%
+  +media-breakpoint-down(md)
+    width: 90%
+  +media-breakpoint-down(sm)
+    width: 100%
+  .order-label
+    display: flex
+    flex-direction: column
+    width: 50%
+    padding: 0 15px
+    margin-bottom: 30px
+    position: relative
+    +media-breakpoint-down(sm)
+      width: 100%
+      padding: 0
+    &__message
+      width: 100%
+    &__text
+      width: 100%
+      flex-direction: row
+      justify-content: flex-start
+      align-items: flex-start
+  .submit-button
+    background: #0052D7
+    border: 1px solid #0052D7
+    color: #ffffff
+    padding: 16px 60px
+    font-size: 18px
+    text-transform: uppercase
+    letter-spacing: 0.03em
+    font-weight: 500
+    margin-top: 45px
+    transition: all .2s ease-in-out
+    +media-breakpoint-down(xs)
+      width: 100%
+    &:hover
+      color: #0052d7
+      background: transparent
+
+.order-label
+  .label-title
+    display: block
+    font-size: 14px
+    font-weight: 500
+    letter-spacing: 0.03em
+    text-transform: uppercase
+    color: #7f7f7f
+    margin-bottom: 15px
+  input, textarea, select
+    border: 1px solid #E0E0E1
+    background: transparent
+    width: 100%
+    height: 60px
+    display: block
+    padding: 16px
+    font-size: 16px
+    color: #0052d7
+  textarea
+    height: 120px
+  select
+    cursor: pointer
+    position: relative
+    padding: 16px 32px 16px 16px
+  .checkbox
+    width: 15px
+    height: 15px
+    margin-right: 20px
+    margin-top: 6px
+    border: 1px solid #E0E0E1
+    background: transparent
+    border-radius: 0
+    width: 24px
+    height: 24px
+    padding: 0
+  .form-text
+    width: 100%
+    font-size: 14px
+    letter-spacing: 0.03em
+    line-height: 17px
+    color: #939597
+    // +media-breakpoint-down(lg)
+    //   width: 80%
+    // +media-breakpoint-down(md)
+    //   width: 100%
+
+.check-wrapper
+  display: block
+  margin-right: 15px
+  position: relative
+  width: 24px
+  height: 24px
+  display: flex
+  align-items: center
+  justify-content: center
+  margin-top: 6px
+
+.custom
+  width: 24px
+  height: 24px
+  position: relative
+
+[type="checkbox"]
+  &:not(:checked), &:checked
+    position: absolute
+    left: -9999px
+
+  &:not(:checked) + .custom, &:checked + .custom
+    position: relative
+    cursor: pointer
+
+  &:not(:checked) + .custom:before, &:checked + .custom:before
+    content: ''
+    position: absolute
+    left: 50%
+    top: 50%
+    transform: translate(-50%, -50%)
+    border: 1px solid #E0E0E1
+    background: transparent
+    border-radius: 0
+    width: 24px
+    height: 24px
+
+  &:not(:checked) + .custom:after, &:checked + .custom:after
+    content: ''
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    width: 12px
+    height: 12px
+    background: #0052D7
+    transition: all .2s
+
+  &:not(:checked) + .custom:after
+    opacity: 0
+
+  &:checked + .custom:after
+    opacity: 1
+
+  // &:disabled
+  //   &:not(:checked) + .custom:before
+  //     // box-shadow: none
+  //     // border-color: #bbb
+  //     // background-color: #ddd
+
+  //   &:checked + .custom
+  //     &:before
+  //       // box-shadow: none
+  //       // border-color: #bbb
+  //       // background-color: #ddd
+
+  //   //   &:after
+  //   //     color: #999
+
+  //   // + .custom
+  //   //   color: #aaa
+
+  // &:checked:focus + .custom:before, &:not(:checked):focus + .custom:before
+  //   border: 1px s blue
+
+/* checkbox aspect
+
+/* checked mark aspect
+
+/* checked mark aspect changes
+
+/* disabled checkbox
+
+/* accessibility
+
+/* hover style just for information
+
+.custom:hover:before
+  border: 1px solid #4778d9 !important

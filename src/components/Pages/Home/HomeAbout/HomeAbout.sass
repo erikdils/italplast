@@ -1,0 +1,99 @@
+.home-about
+  position: relative
+  width: 100%
+  height: 100%
+  background-color: #0052D7
+  .section-decor
+    display: block
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    text-align: center
+    color: #ffffff
+    font-size: 20vw
+    line-height: 1
+    letter-spacing: 0.1em
+    &__trans
+      display: block
+      transform: translateX(30%)
+      color: red
+      line-height: 1
+
+.home-about__wrapper
+  width: 100%
+  height: 100%
+  display: flex
+  flex-direction: row
+  align-items: stretch
+  justify-content: center
+  +media-breakpoint-down(md)
+    flex-direction: column
+  .about-item__left
+    position: relative
+    width: 64%
+    height: 100%
+    padding: 120px 60px 120px 8vw
+    +media-breakpoint-down(lg)
+      width: 54%
+      padding: 60px 6vw
+    +media-breakpoint-down(md)
+      width: 100%
+    .h2
+      font-size: 45px
+      text-transform: uppercase
+      color: #fff
+      font-weight: 500
+      +media-breakpoint-down(lg)
+        font-size: 35px
+      +media-breakpoint-down(xs)
+        font-size: 22px
+  .about-item__right
+    position: relative
+    width: 36%
+    display: flex
+    align-items: center
+    justify-content: center
+    +media-breakpoint-down(lg)
+      width: 46%
+    +media-breakpoint-down(md)
+      width: 100%
+      height: 500px
+    .about-image
+      display: block
+      width: 100%
+      height: 100%
+      object-fit: cover
+      object-position: center
+      +media-breakpoint-down(md)
+        object-position: top center
+    
+
+    
+.about-lists
+  margin-top: 25px
+  display: block
+  &__item
+    margin-top: 15px
+    position: relative
+    padding-left: 20px
+    &::before
+      content: ''
+      position: absolute
+      top: 50%
+      left: 0
+      transform: translateY(-50%)
+      width: 6px
+      height: 6px
+      background: #fff
+      opacity: .75
+    .item-text
+      font-size: 18px
+      letter-spacing: 0.03em
+      font-weight: 400
+      color: #ffffff
+      opacity: .75
+      +media-breakpoint-down(lg)
+        font-size: 16px
+      +media-breakpoint-down(xs)
+        font-size: 15px

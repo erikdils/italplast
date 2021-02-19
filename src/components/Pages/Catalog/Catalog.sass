@@ -1,0 +1,352 @@
+.catalog
+  padding: 50px 8vw 90px 8vw
+  display: flex
+  align-items: flex-start
+  background: #fff
+  +media-breakpoint-down(lg)
+    padding: 50px 6vw 90px 6vw
+  +media-breakpoint-down(md)
+    flex-wrap: wrap
+
+.catalog-header
+  display: flex
+  align-items: center
+  justify-content: space-between
+  padding: 0 0 20px 20px
+  +media-breakpoint-down(md)
+    padding: 30px 0 20px 0
+  &__title
+    font-size: 18px
+    line-height: 22px
+    letter-spacing: 0.03em
+    font-weight: 500
+    color: #7f7f7f
+    text-transform: uppercase
+    +media-breakpoint-down(sm)
+      font-size: 16px
+    +media-breakpoint-down(xs)
+      font-size: 14px
+  &__count
+    font-size: 18px
+    line-height: 22px
+    letter-spacing: 0.03em
+    font-weight: 500
+    color: #0052D7
+    margin-left: 15px
+    +media-breakpoint-down(sm)
+      font-size: 16px
+    +media-breakpoint-down(xs)
+      font-size: 14px
+    
+
+.mobile-filter__button
+  display: none
+  align-items: center
+  padding: 0
+  +media-breakpoint-down(md)
+    display: flex
+  .filter-button__title
+    font-size: 18px
+    line-height: 22px
+    letter-spacing: 0.03em
+    font-weight: 500
+    color: #7f7f7f
+    text-transform: uppercase
+    +media-breakpoint-down(sm)
+      font-size: 16px
+    +media-breakpoint-down(xs)
+      font-size: 14px
+  .button-icon
+    width: 40px
+    height: 40px
+    margin-left: 20px
+    border: 1px solid #0052D7
+    display: flex
+    align-items: center
+    justify-content: center
+    .lines
+      width: 20px
+      height: 20px
+      display: flex
+      align-items: flex-start
+      justify-content: center
+      transition: all .2s ease-in-out
+      .line
+        display: block
+        width: 1px
+        background: #0052D7
+        margin: 0 3px
+        transition: all .2s ease-in-out
+        &-1
+          height: 20px
+        &-2
+          height: 16px
+        &-3
+          height: 12px
+
+.mobile-filter__button
+  &.is-active
+    &:hover
+      .button-icon
+        .lines
+          .line-1
+            height: 20px
+    .button-icon
+      .lines
+        position: relative
+        transform: rotate(45deg)
+        .line-1
+          transform: rotate(90deg)
+          margin: 0
+          position: absolute
+        .line-2
+          opacity: 0
+        .line-3
+          height: 20px
+          //transform: rotate(90deg)
+          margin: 0
+          position: absolute
+  &:hover
+    .button-icon
+      .lines
+        .line-1
+          height: 12px
+        .line-3
+          height: 20px
+
+
+.catalog-items_wrapper
+  width: 75%
+  min-height: 800px
+  +media-breakpoint-down(md)
+    width: 100%
+
+.catalog-items
+  display: flex
+  flex-wrap: wrap
+  padding: 0 10px
+  margin-right: -20px
+  +media-breakpoint-down(md)
+    margin: 0 -20px
+  +media-breakpoint-down(sm)
+    margin: 0 -20px
+  .catalog-item
+    width: 33.33%
+    padding: 20px 15px 40px 15px
+    position: relative
+    text-align: center
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    +media-breakpoint-down(lg)
+      width: 50%
+    +media-breakpoint-down(md)
+      width: 33.33%
+    +media-breakpoint-down(sm)
+      width: 50%
+    &:hover
+      .catalog-item__title
+        color: #ffffff
+      .link-background
+        background: #0052D7
+      .catalog-img
+        transform: scale(1.1)
+    .img-wrapper
+      width: 100%
+      .catalog-img
+        transition: all .3s ease-in-out
+    .link-background
+      position: absolute
+      top: 10px
+      left: 10px
+      bottom: 10px
+      right: 10px
+      background: transparent
+      border: 1px solid #F0F0F0
+      transition: all .3s ease-in-out
+    &__title
+      position: relative
+      display: block
+      font-size: 20px
+      font-weight: 500
+      line-height: 150%
+      color: #7F7F7F
+      text-transform: uppercase
+      margin-bottom: 15px
+      transition: all .3s ease-in-out
+      +media-breakpoint-down(md)
+        font-size: 17px
+
+
+.catalog-aside
+  width: 25%
+  height: auto
+  padding-right: 40px
+  position: -webkit-sticky
+  position: sticky
+  top: 120px
+  +media-breakpoint-down(lg)
+    padding-right: 20px
+  +media-breakpoint-down(md)
+    position: relative
+    top: auto
+    width: 100%
+    padding-right: 0
+    padding-top: 9px
+    display: flex
+    border-bottom: 1px solid #F0F0F0
+    transition: opacity .3s ease-in-out, height .4s ease-in-out, visibility .2s ease-in-out
+    background: #fff
+    visibility: hidden
+    height: 0
+    transform: scaleY(0)
+    transform-origin: top
+    &.is-active
+      visibility: visible
+      height: auto
+      transform: scaleY(1)
+  +media-breakpoint-down(xs)
+    flex-wrap: wrap
+
+
+.filter-brands
+  +media-breakpoint-down(md)
+    margin-bottom: 30px
+    width: 30%
+  +media-breakpoint-down(sm)
+    width: 50%
+  +media-breakpoint-down(xs)
+    width: 100%
+  &__title
+    font-size: 18px
+    line-height: 22px
+    letter-spacing: 0.03em
+    font-weight: 500
+    color: #7f7f7f
+    text-transform: uppercase
+  &__list
+    margin-top: 50px
+    margin-bottom: 60px
+    +media-breakpoint-down(md)
+      margin-bottom: 0
+      margin-top: 20px
+
+.filter-materials
+  border-bottom: 1px solid #F0F0F0
+  margin-bottom: 60px
+  +media-breakpoint-down(md)
+    border-bottom: 0
+    margin-bottom: 30px
+    margin-right: 60px
+    width: 30%
+  +media-breakpoint-down(sm)
+    width: 50%
+  +media-breakpoint-down(xs)
+    width: 100%
+    margin-right: 0
+  &__title
+    font-size: 18px
+    line-height: 22px
+    letter-spacing: 0.03em
+    font-weight: 500
+    color: #7f7f7f
+    text-transform: uppercase
+  &__list
+    margin-top: 50px
+    margin-bottom: 60px
+    +media-breakpoint-down(md)
+      margin-bottom: 0
+      margin-top: 20px
+
+    
+
+.filter-materials__item
+  margin-bottom: 10px
+  position: relative
+  padding-left: 20px
+  &:hover
+    .filter-link
+      .link-title, .link-count
+        color: #0052D7
+    &::before
+      background: #0052D7
+  &::before
+    content: ''
+    position: absolute
+    left: 0
+    top: 50%
+    transform: translateY(-50%)
+    width: 6px
+    height: 6px
+    background: #939597
+    transition: all .3s ease-in-out
+  .filter-link
+    width: 100%
+    display: flex
+    justify-content: space-between
+    .link-title
+      font-size: 13px
+      letter-spacing: 0.03em
+      color: #939597
+      text-transform: uppercase
+      transition: all .3s ease-in-out
+      font-weight: 500
+      line-height: 1.3
+    .link-count
+      font-size: 13px
+      letter-spacing: 0.03em
+      color: #939597
+      text-transform: uppercase
+      transition: all .3s ease-in-out
+      font-weight: 500
+      line-height: 1.3
+
+.filter-brands__item
+  margin-bottom: 10px
+  padding-left: 20px
+  position: relative
+  &:hover, &.is-active
+    .filter-button
+      color: #0052D7
+      .button-title, .button-count
+        color: #0052D7
+    &::before
+      background: #0052D7
+  &::before
+    content: ''
+    position: absolute
+    left: 0
+    top: 50%
+    transform: translateY(-50%)
+    width: 6px
+    height: 6px
+    background: #939597
+    transition: all .3s ease-in-out
+  .filter-button
+    width: 100%
+    display: flex
+    justify-content: space-between
+    padding: 0
+    font-size: 13px
+    letter-spacing: 0.03em
+    color: #939597
+    text-transform: uppercase
+    transition: all .3s ease-in-out
+    font-weight: 500
+    line-height: 1.3
+    .button-title
+      font-size: 13px
+      letter-spacing: 0.03em
+      color: #939597
+      text-transform: uppercase
+      transition: all .3s ease-in-out
+      font-weight: 500
+      line-height: 1.3
+    .button-count
+      font-size: 13px
+      letter-spacing: 0.03em
+      color: #939597
+      text-transform: uppercase
+      transition: all .3s ease-in-out
+      font-weight: 500
+      line-height: 1.3

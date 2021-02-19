@@ -1,0 +1,124 @@
+//@import 'node_modules/bootstrap/scss/bootstrap-grid.scss'
+@import 'node_modules/bootstrap/scss/bootstrap-reboot.scss'
+@import 'node_modules/bootstrap/scss/mixins/_breakpoints.scss'
+
+@import '../components/Pages/Ui/MainScreenSecond/MainScreenSecond.sass'
+@import '../components/Pages/Ui/CrumbsNav/CrumbsNav.sass'
+@import '../components/Pages/Ui/FooterForm/FooterForm.sass'
+
+@import '../components/Header/header.sass'
+@import '../components/Header/Burger/burger.sass'
+@import '../components/Header/Navigation/navigation.sass'
+@import '../components/Header/Navigation/Menu/menu.sass'
+@import '../components/Header/Navigation/Menu/DropdownMenu/dropdownmenu.sass'
+@import '../components/Header/Navigation/Language/language.sass'
+
+
+@import '../components/Footer/Footer.sass'
+
+@import '../components/Pages/Home/MainScreen.sass'
+@import '../components/Pages/Home/HomeSlider/homeSlider.sass'
+@import '../components/Pages/Home/home.sass'
+@import '../components/Pages/Home/HomeAbout/HomeAbout.sass'
+@import '../components/Pages/Home/HomePartners/HomePartners.sass'
+
+@import '../components/Pages/Case/CaseMainScreen/CaseMainScreen.sass'
+@import '../components/Pages/Case/CaseSpecifications/CaseSpecifications.sass'
+@import '../components/Pages/Case/CaseColors/CaseColors.sass'
+
+@import '../components/Pages/Catalog/Catalog.sass'
+
+@import '../components/Pages/About/About.sass'
+
+@import '../components/Pages/Portfolio/Portfolio.sass'
+
+@import '../components/Pages/Contacts/Contacts.sass'
+
+@import '../components/Pages/Cooperation/Cooperation.sass'
+
+@import '../components/Pages/Order/Order.sass'
+
+@import '../components/Pages/pages.sass'
+
+@import '../components/Pages/Search/Search.sass'
+
+
+
+
+
+*::-webkit-input-placeholder
+	color: rgba(#000, .3)
+	font-weight: 300
+	opacity: 1
+
+*:-moz-placeholder 
+	color: rgba(#000, .3)
+	font-weight: 300
+	opacity: 1
+
+*::-moz-placeholder 
+	color: rgba(#000, .3)
+	font-weight: 300
+	opacity: 1 
+
+*:-ms-input-placeholder
+	color: rgba(#000, .3)
+	font-weight: 300
+	opacity: 1
+
+html
+	width: 100%
+	max-width: 100%
+	backface-visibility: hidden
+
+body
+	position: relative
+	width: 100%
+	max-width: 100%
+	font-family: 'Montserrat', sans-serif
+	overflow-x: hidden
+	scroll-behavior: smooth
+	font-smooth: antialiased
+	background: #fafafa
+	
+
+
+ul
+	padding: 0
+	margin: 0
+	li
+		list-style: none
+
+
+button
+	background-color: transparent
+	border: none
+	outline: none
+	&:focus, &:focus, &:active
+		outline: none
+
+a
+	outline: none
+	&:hover, &:focus, &:active
+		text-decoration: none
+		//color: inherit
+
+p
+	margin: 0
+
+select, input, textarea
+	border: none
+	background-image: none
+	background-color: transparent
+	-webkit-box-shadow: none
+	-moz-box-shadow: none
+	box-shadow: none
+	-moz-appearance: none
+	-webkit-appearance: none
+	appearance: none
+	border-radius: 0px
+
+.container-fluid
+	padding: 0 8vw 0 8vw
+	+media-breakpoint-down(lg)
+		padding: 0 6vw 0 6vw
